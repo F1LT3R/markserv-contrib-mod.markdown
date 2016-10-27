@@ -1,0 +1,48 @@
+{
+  "name": "ms-contrib-mod.markdown",
+  "version": "1.0.0",
+  "description": "Serves Markdown files as rendered HTML",
+  "repository": "git@github.com:f1lt3r/markserv-contrib-mod.markdown",
+  "main": "lib/mod.markdown.js",
+  "template": "lib/mod.markdown.tmpl.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "f1lt3r",
+  "license": "GPL-3.0",
+  "xo": {
+    "esnext": true,
+    "space": 2,
+    "globals": [
+      "it",
+      "describe",
+      "beforeEach"
+    ]
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "handlebars": "^4.0.5",
+    "marked": "^0.3.6",
+    "markserv-cli": "^1.0.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 2,
+    "globals": [
+      "it" ,
+      "describe",
+      "beforeEach"
+    ],
+    "rules": {
+      "import/no-dynamic-require": 0
+    },
+    "overrides": [
+      {
+        "files": "**/Markconf.*",
+        "rules": {
+          "unicorn/filename-case": ["error", {"case": "pascalCase"}]
+        }
+      }
+    ]
+  }
+}
