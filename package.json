@@ -1,6 +1,6 @@
 {
   "name": "markserv-contrib-mod.markdown",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Serves Markdown files as rendered HTML",
   "repository": "git@github.com:f1lt3r/markserv-contrib-mod.markdown",
   "main": "lib/mod.markdown.js",
@@ -11,7 +11,6 @@
   "license": "GPL-3.0",
   "xo": {
     "esnext": true,
-    "space": 2,
     "globals": [
       "it",
       "describe",
@@ -21,8 +20,7 @@
   "dependencies": {
     "bluebird": "^3.4.6",
     "handlebars": "^4.0.5",
-    "marked": "^0.3.6",
-    "markserv-cli": "^1.0.0"
+    "marked": "^0.3.6"
   },
   "xo": {
     "esnext": true,
