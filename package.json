@@ -1,11 +1,11 @@
 {
   "name": "markserv-contrib-mod.markdown",
-  "version": "1.0.6",
+  "version": "1.0.17",
   "description": "Serves Markdown files as rendered HTML",
   "repository": "git@github.com:f1lt3r/markserv-contrib-mod.markdown",
   "main": "lib/mod.markdown.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "true"
   },
   "author": "f1lt3r",
   "license": "GPL-3.0",
@@ -13,18 +13,6 @@
     "esnext": true,
     "globals": [
       "it",
-      "describe",
-      "beforeEach"
-    ]
-  },
-  "dependencies": {
-    "bluebird": "^3.4.6",
-    "marked": "^0.3.6"
-  },
-  "xo": {
-    "esnext": true,
-    "globals": [
-      "it" ,
       "describe",
       "beforeEach"
     ],
@@ -35,9 +23,18 @@
       {
         "files": "**/Markconf.*",
         "rules": {
-          "unicorn/filename-case": ["error", {"case": "pascalCase"}]
+          "unicorn/filename-case": [
+            "error",
+            {
+              "case": "pascalCase"
+            }
+          ]
         }
       }
     ]
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "marked": "^0.3.6"
   }
 }
